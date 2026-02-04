@@ -43,7 +43,6 @@
               <td style="padding:2.5%;width:37%;max-width:37%">
                 <a href="images/caiyi.jpg"><img style="width:100%;max-width:100%;object-fit: cover; " alt="profile photo" src="images/caiyi.jpg" class="hoverZoomLink"></a>
               </td>
-	<!--
             </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -51,63 +50,60 @@
               <td style="padding:16px;width:100%;vertical-align:middle">
                 <h2>Research</h2>
                 <p>
-                  I'm interested in computer vision, deep learning, generative AI, and image processing. Most of my research is about inferring the physical world (shape, motion, color, light, etc) from images, usually with radiance fields. Some papers are <span class="highlight">highlighted</span>.
+                  I'm interested in robot learning , particularly in how robots can learn from their environments and from human behaviors.
                 </p>
               </td>
             </tr>
-	-->
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-<!--
-    <tr onmouseout="bolt3d_stop()" onmouseover="bolt3d_start()"  bgcolor="#ffffd0">
+
+    <tr onmouseout="lvp_stop()" onmouseover="lvp_start()"  bgcolor="#ffffd0">
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='bolt3d_image'><video  width=100% height=100% muted autoplay loop>
-          <source src="images/bolt3d.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-
-          </video></div>
-          <img src='images/bolt3d.jpg' width="160">
+          <img src='images/lvp.png' width="160">
         </div>
         <script type="text/javascript">
-          function bolt3d_start() {
+          function lvp_start() {
             document.getElementById('bolt3d_image').style.opacity = "1";
           }
 
-          function bolt3d_stop() {
+          function lvp_stop() {
             document.getElementById('bolt3d_image').style.opacity = "0";
           }
-          bolt3d_stop()
+          lvp_stop()
         </script>
       </td>
       <td style="padding:8px;width:80%;vertical-align:middle">
         <a href="https://szymanowiczs.github.io/bolt3d">
-          <span class="papertitle">Bolt3D: Generating 3D Scenes in Seconds</span>
+          <span class="papertitle">Large Video Planner Enables Generalizable Robot Control</span>
         </a>
         <br>
-        <a href="https://szymanowiczs.github.io/">Stanislaw Szymanowicz</a>,
-        <a href="https://jasonyzhang.com">Jason Y. Zhang</a>,
-        <a href="https://pratulsrinivasan.github.io">Pratul Srinivasan</a>,
-        <a href="https://ruiqigao.github.io">Ruiqi Gao</a>,
-        <a href="https://github.com/ArthurBrussee">Arthur Brussee</a>,
-        <a href="https://holynski.org">Aleksander Holynski</a>,
-        <a href="https://ricardomartinbrualla.com">Ricardo Martin-Brualla</a>,
-		<strong>Jonathan T. Barron</strong>,
-        <a href="https://henzler.github.io">Philipp Henzler</a>
+        <a href="https://www.boyuan.space/">Boyuan Chen</a>*,
+        <a href="https://tianyuanzhang.com/">Tianyuan Zhang</a>*,
+        <a href="https://geng-haoran.github.io/">Haoran Geng</a>*,
+        <a href="https://kiwhan.dev/">Kiwhan Song</a>,
+        <strong>Caiyi Zhang</strong>,
+        <a href="https://peihao.li/">Peihao Li</a>,
+        <a href="https://billf.mit.edu/">William T. Freeman</a>,
+        <a href="https://people.eecs.berkeley.edu/~malik/">Jitendra Malik</a>,
+        <a href="https://people.eecs.berkeley.edu/~pabbeel/">Pieter Abbeel</a>,
+        <a href="https://locomotion.csail.mit.edu/russt.html">Russ Tedrake</a>,
+        <a href="https://www.vincentsitzmann.com/">Vincent Sitzmann</a>,
+        <a href="https://yilundu.github.io/">Yilun Du</a>
         <br>
         <em>arXiv</em>, 2025
         <br>
-        <a href="https://szymanowiczs.github.io/bolt3d">project page</a>
+        <a href="https://www.boyuan.space/large-video-planner/">project page</a>
         /
-        <a href="https://szymanowiczs.github.io/bolt3d">arXiv</a>
+        <a href="https://arxiv.org/abs/2512.15840">arXiv</a>
         <p></p>
         <p>
-		By training a latent diffusion model to directly output 3D Gaussians we enable fast (~6 seconds on a single GPU) feed-forward 3D scene generation.
+		    First open video model at a foundation-model scale for generative robotics planning.
         </p>
       </td>
     </tr>
-
+<!--
     <tr onmouseout="cat4d_stop()" onmouseover="cat4d_start()" bgcolor="#ffffd0">
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
