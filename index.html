@@ -18,14 +18,16 @@
         <td style="padding:0px">
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr style="padding:0px">
-              <td style="padding:2.5%;width:63%;vertical-align:middle">
+              <td style="padding:2.5%;width:70%;vertical-align:middle">
                 <p class="name" style="text-align: center;">
                   Celia Zhang
                 </p>
                 <p>
-		I’m a junior undergraduate student at Purdue, majoring in CS with a research focus on robot learning. 
-		I’ve had the opportunity to work with <a href="https://qureshiahmed.github.io/">Professor Ahmed H. Qureshi</a> at Purdue, and I am currently a visiting researcher at <a href="https://bair.berkeley.edu/">BAIR</a> at UC Berkeley, advised by <a href="https://people.eecs.berkeley.edu/~malik/">Professor Jitendra Malik</a>.<br />
-		I’m also honored to be a recipient of the Jandos Scholarship, which supports students from underrepresented backgrounds in science and aligns with my belief in creating more opportunities for women and minorities in STEM.
+		I’m a senior undergraduate student at Purdue, majoring in CS with a research focus on robot learning.
+		I worked with <a href="https://qureshiahmed.github.io/">Professor Ahmed H. Qureshi</a> at Purdue, and was a visiting researcher at <a href="https://bair.berkeley.edu/">BAIR</a> at UC Berkeley last summer, supervised by <a href="https://people.eecs.berkeley.edu/~malik/">Professor Jitendra Malik</a>.<br />
+		I also spent time at <a href="https://www.zhenfund.com/">Zhenfund</a>, a VC firm where I learned a great deal about startups and met many talented people. Full of fond memories.
+    <br />I recently wrapped up an internship at a stealth startup working on VLA models for dexterous manipulation. Can’t wait to see the company go public and the demos I worked on out in the world :)
+		
                 </p>
                 <p style="text-align:center">
                   <a href="mailto:zcyqyq@gmail.com">Email</a> &nbsp;/&nbsp;
@@ -41,7 +43,7 @@
                 </p>
               </td>
               <td style="padding:2.5%;width:37%;max-width:37%">
-                <a href="images/caiyi.jpg"><img style="width:100%;max-width:100%;object-fit: cover; " alt="profile photo" src="images/caiyi.jpg" class="hoverZoomLink"></a>
+                <a href="images/caiyi2.jpg"><img style="width:100%;max-width:100%;object-fit: cover; " alt="profile photo" src="images/caiyi.jpg" class="hoverZoomLink"></a>
               </td>
             </tr>
           </tbody></table>
@@ -50,7 +52,14 @@
               <td style="padding:16px;width:100%;vertical-align:middle">
                 <h2>Research</h2>
                 <p>
-                  I'm interested in robot learning , particularly in how robots can learn from their environments and from human behaviors.
+                   My research focuses on foundation models for robotics. I am   
+  particularly interested in how large-scale training can endow
+  robots with strong generalization and the ability to handle   
+  complex tasks. More concretely, my interests include
+  leveraging pretrained models to help robots better understand 
+  the physical world, improving the data efficiency of imitation
+   learning under limited demonstrations, and enabling          
+  closed-loop control through environment interaction.
                 </p>
               </td>
             </tr>
@@ -58,24 +67,12 @@
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
-    <tr onmouseout="lvp_stop()" onmouseover="lvp_start()"  bgcolor=#f2fff2>
-      <td style="padding:16px;width:20%;vertical-align:middle">
-        <div class="one">
-          <img src='images/lvp.png' width="160">
-        </div>
-        <script type="text/javascript">
-          function lvp_start() {
-            document.getElementById('bolt3d_image').style.opacity = "1";
-          }
-
-          function lvp_stop() {
-            document.getElementById('bolt3d_image').style.opacity = "0";
-          }
-          lvp_stop()
-        </script>
+    <tr bgcolor=#f2fff2>
+      <td style="padding:16px;width:40%;vertical-align:middle;text-align:center">
+        <img src='images/lvp.png' style="width:160%;display:block;margin:auto">
       </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://szymanowiczs.github.io/bolt3d">
+      <td style="padding:8px;width:70%;vertical-align:middle">
+        <a href="https://www.boyuan.space/large-video-planner/">
           <span class="papertitle">Large Video Planner Enables Generalizable Robot Control</span>
         </a>
         <br>
@@ -94,15 +91,60 @@
         <br>
         In Submission
         <br>
-        <a href="https://www.boyuan.space/large-video-planner/">project page</a>
+        <a href="https://github.com/buoyancy99/large-video-planner/tree/main">Code</a>
         /
-        <a href="https://arxiv.org/abs/2512.15840">arXiv</a>
+        <a href="https://arxiv.org/abs/2512.15840">ArXiv</a>
+        /
+        <a href="https://huggingface.co/spaces/KempnerInstituteAI/LVP">HuggingFace</a>
         <p></p>
         <p>
 		    First open video model at a foundation-model scale for generative robotics planning.
         </p>
       </td>
     </tr>
+          </tbody></table>
+           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:16px;width:100%;vertical-align:middle">
+                <h2>Projects</h2>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:16px;width:30%;vertical-align:middle">
+                <video style="width:100%;" muted autoplay loop>
+                  <source src="images/dex_demo.mp4" type="video/mp4">
+                </video>
+              </td>
+              <td style="padding:8px;width:70%;vertical-align:middle">
+                <span class="papertitle">Leap Hand VLA in Simulation</span>
+                <br>
+                Rebuilt the DexGraspNet data collection pipeline in isaaclab to generate large-scale training data for dexterous hand manipulation. The pipeline supports VLA training across multiple model families including SmolVLA, OpenVLA, and the Pi series.
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:16px;width:100%;vertical-align:middle">
+                <h2>Awards</h2>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:8px 16px;width:100%;vertical-align:middle">
+                <ul>
+                  <li><strong>Jandos Scholarship</strong>, supports students from underrepresented backgrounds in science, aligned with my belief in creating more opportunities for women and minorities in STEM, 2025</li>
+                  <li><strong>Dean's List</strong>, all semesters at Purdue</li>
+                  <li><strong>National First Prize</strong>, Chinese Mathematics Competition for College Students (CMC), 2022</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody></table>
+
+         
+
 <!--
     <tr onmouseout="cat4d_stop()" onmouseover="cat4d_start()" bgcolor="#ffffd0">
       <td style="padding:16px;width:20%;vertical-align:middle">
